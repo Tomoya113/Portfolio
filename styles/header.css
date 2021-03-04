@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/header/background-fluid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pattern1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/header/background-pattern1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.pattern2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/header/background-pattern2.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.title {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  font-size: 108px;
+  font-weight: bold;
+  line-height: 1.2;
+}
