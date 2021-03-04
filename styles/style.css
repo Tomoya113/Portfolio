@@ -1,0 +1,46 @@
+:root {
+  --background: #112E40;
+  --white: #fafafa;
+  --pink: #FA5849;
+  --light-pink: #FC7472;
+  --ruby: #FF5252;
+  --vue: #81C784;
+  --swift: #FF8B36;
+  --firebase: #FF8F00;
+  --javascript: #FFD600;
+  --python: #0277BD;
+  --typescript: #1976D2;
+  --react: #80DEEA;
+  --awad: #07B4CD;
+  --aika: #6C798F;
+  --study-room: #81C784;
+  --ramen-collection: #F8AA18;
+  --lit-red: #e63c35;
+  --lit-blue: #009bdb;
+  --lit-green: #67b62d;
+  --lit-yellow: #fac700;
+  --business-card-pink: #D92BC5;
+  --business-card-green: #2BD92B;
+  --business-card-yellow: #BFD92B;
+  --business-card-blue: #2BD6D9;
+}
+
+* {
+  font-family: Futura;
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+}
+
+h2 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+section {
+  padding-top: 50px;
+}
