@@ -1,0 +1,59 @@
+.about_me-name {
+  font-family: var(--japanese);
+  font-size: 48px;
+  border-left: solid 15px var(--light-pink);
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+.about_me-name span {
+  font-size: 24px;
+  color: var(--gray);
+}
+
+.about_me-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.about_me-information {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.about_me-information p {
+  font-size: 20px;
+  font-family: var(--japanese);
+  font-weight: 100;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.about_me-avatar {
+  width: 50%;
+  /* margin-left: 40px; */
+}
+
+.about_me-avatar img {
+  display: block;
+  width: 100%;
+}
+
+.about_me-links {
+  display: flex;
+}
+
+.link {
+  display: block;
+}
+
+.link:not(:nth-child(1)) {
+  margin-left: 20px;
+}
+
+.link img {
+  display: block;
+  width: 76px;
+}

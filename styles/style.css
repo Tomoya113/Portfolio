@@ -1,6 +1,7 @@
 :root {
   --background: #112E40;
   --white: #fafafa;
+  --gray: #CBCBCB;
   --pink: #FA5849;
   --light-pink: #FC7472;
   --ruby: #FF5252;
@@ -23,6 +24,7 @@
   --business-card-green: #2BD92B;
   --business-card-yellow: #BFD92B;
   --business-card-blue: #2BD6D9;
+  --japanese: 'Hiragino Kaku Gothic';
 }
 
 * {
@@ -36,6 +38,7 @@ body {
 
 h2 {
   margin: 0;
+  font-size: 72px;
 }
 p {
   margin: 0;
@@ -43,4 +46,45 @@ p {
 
 section {
   padding-top: 50px;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 50px 50px;
+}
+
+.ruby {
+  background-color: var(--ruby);
+}
+
+.swift {
+  background-color: var(--swift);
+}
+
+.js {
+  background-color: var(--javascript);
+}
+
+.ts {
+  background-color: var(--typescript);
+}
+
+.python {
+  background-color: var(--python);
+}
+
+.vue {
+  background-color: var(--vue);
+}
+
+.firebase {
+  background-color: var(--firebase);
+}
+
+.react {
+  background-color: var(--react);
 }
