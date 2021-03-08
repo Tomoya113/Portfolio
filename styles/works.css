@@ -1,0 +1,68 @@
+.works-container {
+  display: flex;
+}
+
+.work {
+  background-color: var(--white);
+  position: relative;
+  padding: 20px;
+  width: 250px !important;
+  height: 450px !important;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--black);
+}
+
+.work h3 {
+  font-family: var(--japanese);
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.work p {
+  font-family: var(--japanese);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.work .used-tech {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+}
+
+.used-tech img {
+  display: block;
+}
+
+.used-tech img:not(:nth-child(1)) {
+  margin-left: 10px
+}
+
+.sportsfesta:before,
+.sportsfesta:after {
+  background: linear-gradient(135deg, rgba(230,60,53,1) 20%, rgba(103,182,45,1) 20%, rgba(103,182,45,1) 40%, rgba(250,199,0,1) 40%, rgba(250,199,0,1) 60%, rgba(0,155,219,1) 60%, rgba(0,155,219,1) 80%, rgba(230,60,53,1) 80%, rgba(230,60,53,1) 100%);
+}
+
+.business-card:before,
+.business-card:after {
+  background: linear-gradient(135deg, rgba(217,43,197,1) 20%, rgba(43,217,43,1) 20%, rgba(43,217,43,1) 40%, rgba(191,217,43,1) 40%, rgba(191,217,43,1) 60%, rgba(43,214,217,1) 60%, rgba(43,214,217,1) 80%, rgba(217,43,197,1) 80%, rgba(217,43,197,1) 100%);
+}
+
+.gradient-border:before,
+.gradient-border:after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+}

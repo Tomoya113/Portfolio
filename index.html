@@ -6,13 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/sanitize.css">
+  <link rel="stylesheet" href="./styles/menu.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/about-me.css">
   <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/works.css">
+  <link rel="stylesheet" href="./styles/writing.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
   <title>Tomoya Tanaka</title>
 </head>
 <body>
-  <!-- <div class="header">
+  <nav>
+    <div class="nav-left">
+      <a href="">tt</a>
+    </div>
+    <div class="nav-right">
+      <a href="">About me</a>
+      <a href="">Skills</a>
+      <a href="">Works</a>
+      <a href="">Writing</a>
+    </div>
+  </nav>
+  <div class="header">
     <div class="pattern1"></div>
     <div class="pattern2"></div>
     <h1 class="title">
@@ -50,7 +66,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <section>
     <div class="wrapper">
       <h2>Skills</h2>
@@ -93,12 +109,99 @@
   <section>
     <div class="wrapper">
       <h2>Works</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="work awad swiper-slide">
+            <img src="./images/works/awad.png" alt="" width="150px">
+            <h3>Awad</h3>
+            <p>関西メンター主催の淡路島全体を使った宝さがしイベントAWA-DのiOSアプリです。</p>
+            <div class="used-tech">
+              <img src="./images/works/swift.png" alt="" width="40px">
+              <img src="./images/works/firebase.png" alt="" width="40px">
+            </div>
+          </div>
+          <div class="work gradient-border sportsfesta swiper-slide">
+            <img src="./images/works/sports-festa.png" alt="" width="150px">
+            <h3>Sports Festa2020</h3>
+            <p>関西メンター主催の運動会「SportsFesta2020」のLPの作成を担当しました。</p>
+            <div class="used-tech">
+              <img src="./images/works/typescript.png" alt="" width="40px">
+              <img src="./images/works/react.png" alt="" width="40px">
+              <img src="./images/works/gatsby.png" alt="" width="40px">
+            </div>
+          </div>
+
+          <div class="work gradient-border business-card swiper-slide">
+            <img src="./images/works/business-card.png" alt="" width="150px">
+            <h3>名刺サイト</h3>
+            <p>Web上で見れる名刺を作りました。</p>
+            <div class="used-tech">
+              <img src="./images/works/javascript.png" alt="" width="40px">
+            </div>
+          </div>
+
+          <div class="work aika swiper-slide">
+            <img src="./images/works/aika.png" alt="" width="150px">
+            <h3>Aika</h3>
+            <p>本アプリはZoomでのオンラインミーティングをより円滑に進めるための支援サービスです。</p>
+            <div class="used-tech">
+              <img src="./images/works/ruby.png" alt="" width="40px">
+              <img src="./images/works/swift.png" alt="" width="40px">
+            </div>
+          </div>
+
+          <div class="work studyroom swiper-slide">
+            <img src="./images/works/study-room.png" alt="" width="150px">
+            <h3>Study room</h3>
+            <p>Study Roomは、時間管理付きのオンライン自習室です。</p>
+            <div class="used-tech">
+              <img src="./images/works/vue.png" alt="" width="40px">
+              <img src="./images/works/firebase.png" alt="" width="40px">
+            </div>
+          </div>
+
+          <div class="work ramen-collection swiper-slide">
+            <img src="./images/works/ramen-collection.jpg" alt="" width="150px">
+            <h3>ラーメンあつめ</h3>
+            <p>駅周辺のラーメンを全部食べるためのアプリです。</p>
+            <div class="used-tech">
+              <img src="./images/works/swift.png" alt="" width="40px">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
   </section>
   <section>
     <div class="wrapper">
       <h2>Writing</h2>
+      <div id="posts-container">
+      </div>
     </div>
   </section>
+  <footer>
+    <p>&copy; Tomoya Tanaka | All Rights Reserved.</p>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

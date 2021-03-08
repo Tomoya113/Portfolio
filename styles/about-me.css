@@ -1,13 +1,14 @@
 .about_me-name {
   font-family: var(--japanese);
-  font-size: 48px;
+  font-size: 40px;
+  font-weight: bold;
   border-left: solid 15px var(--light-pink);
   padding-left: 10px;
-  margin-top: 40px;
 }
 
 .about_me-name span {
   font-size: 24px;
+  font-weight: normal;
   color: var(--gray);
 }
 
@@ -24,7 +25,7 @@
 }
 
 .about_me-information p {
-  font-size: 20px;
+  font-size: 24px;
   font-family: var(--japanese);
   font-weight: 100;
   line-height: 1.5;
@@ -32,7 +33,7 @@
 }
 
 .about_me-avatar {
-  width: 50%;
+  width: 45%;
   /* margin-left: 40px; */
 }
 

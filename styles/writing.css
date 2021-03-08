@@ -1,0 +1,21 @@
+#posts-container {
+  margin-top: 50px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+}
+
+.post:not(:nth-child(1)) {
+  margin-top: 20px;
+}
+
+.post p {
+  text-decoration: underline;
+  font-family: var(--japanese);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  margin-left: 20px;
+}

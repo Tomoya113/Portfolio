@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  padding: 30px 50px 0;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.nav-left {
+  flex-grow: 1;
+}
+
+.nav-left a {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-right a {
+  display: block;
+  font-size: 32px;
+}
+
+.nav-right a:not(:nth-child(1)) {
+  margin-left: 30px;
+}

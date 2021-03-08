@@ -1,5 +1,6 @@
 :root {
   --background: #112E40;
+  --black: #333333;
   --white: #fafafa;
   --gray: #CBCBCB;
   --pink: #FA5849;
@@ -39,22 +40,31 @@ body {
 h2 {
   margin: 0;
   font-size: 72px;
+  margin: 0 0 50px;
 }
+
 p {
   margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 section {
   padding-top: 50px;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
   width: 1200px;
-  height: 100%;
-  margin: 0 auto;
   padding: 0 50px 50px;
+
 }
 
 .ruby {
@@ -87,4 +97,20 @@ section {
 
 .react {
   background-color: var(--react);
+}
+
+.awad {
+  border-top: solid 10px var(--awad);
+}
+
+.aika {
+  border-top: solid 10px var(--aika);
+}
+
+.studyroom {
+  border-top: solid 10px var(--study-room);
+}
+
+.ramen-collection {
+  border-top: solid 10px var(--ramen-collection);
 }
