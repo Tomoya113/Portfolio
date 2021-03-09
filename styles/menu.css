@@ -17,6 +17,7 @@ nav {
 
 .nav-right {
   display: flex;
+  align-items: center;
 }
 
 .nav-right a {
@@ -26,4 +27,13 @@ nav {
 
 .nav-right a:not(:nth-child(1)) {
   margin-left: 30px;
+}
+
+
+@media (max-width: 768px) { 
+  
+  .nav-right a {
+    display: block;
+    font-size: 20px;
+  }
 }

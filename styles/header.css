@@ -40,3 +40,26 @@
   font-weight: bold;
   line-height: 1.2;
 }
+
+@media (max-width: 1170px) {
+  .title {
+    position: unset;
+    font-size: 84px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 768px) { 
+  .title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) { 
+  .title {
+    font-size: 48px;
+  }
+}

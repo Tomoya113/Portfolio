@@ -14,184 +14,193 @@
   <link rel="stylesheet" href="./styles/writing.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" />
   <title>Tomoya Tanaka</title>
 </head>
 <body>
-  <nav>
+  <nav id="global-menu">
     <div class="nav-left">
-      <a href="">tt</a>
+      <a data-menuanchor="top" href="#top" class="opacity-hover">tt</a>
     </div>
     <div class="nav-right">
-      <a href="">About me</a>
-      <a href="">Skills</a>
-      <a href="">Works</a>
-      <a href="">Writing</a>
+      <a data-menuanchor="about-me" href="#about-me" class="opacity-hover">About me</a>
+      <a data-menuanchor="skills" href="#skills" class="opacity-hover">Skills</a>
+      <a data-menuanchor="works" href="#works" class="opacity-hover">Works</a>
+      <a data-menuanchor="writing" href="#writing" class="opacity-hover">Writing</a>
     </div>
   </nav>
-  <div class="header">
-    <div class="pattern1"></div>
-    <div class="pattern2"></div>
-    <h1 class="title">
-      WELCOME TO <br/>
-      MY PORTFOLIO
-    </h1>
-  </div>
-  <section>
-    <div class="wrapper">
-      <h2>About me</h2>
-      <p class="about_me-name">
-        田中智也<span>(Tomoya Tanaka)</span>
-      </p>
-      <div class="about_me-content">
-        <div class="about_me-information">
-          <p>
-            2001年大阪府生まれ。SwiftやTypeScriptなどを使ったフロントエンドの開発が好きで、普段はQiitaへの記事の投稿や個人開発、ハッカソンへの出場などを通じてプログラミングでアウトプットを行っています。
-            <br/>
-            2020年の8月からLife is Tech!という会社で中高生に向けにRubyを使ったWebサービスの開発、Swiftを使ったiOSアプリの開発について教えています。また、そこで使用する教科書の作成もしています。
-          </p>
-          <div class="about_me-links">
-            <a href="#" class="link">
-              <img src="./images/links/github.png" alt="">
-            </a>
-            <a href="#" class="link">
-              <img src="./images/links/gmail.png" alt="">
-            </a>
-            <a href="#" class="link">
-              <img src="./images/links/qiita.png" alt="">
-            </a>
+  <main id="fullpage">
+    <div class="header section">
+      <div class="pattern1"></div>
+      <div class="pattern2"></div>
+      <h1 class="title">
+        WELCOME TO <br/>
+        MY PORTFOLIO
+      </h1>
+    </div>
+    <section class="section">
+      <div class="wrapper">
+        <h2>About me</h2>
+        <div class="about_me-content">
+          <div class="about_me-information">
+            <p class="about_me-name">
+              田中智也<span>(Tomoya Tanaka)</span>
+            </p>
+            <p class="detail">
+              2001年大阪府生まれ。SwiftやTypeScriptなどを使ったフロントエンドの開発が好きで、普段はQiitaへの記事の投稿や個人開発、ハッカソンへの出場などを通じてプログラミングでアウトプットを行っています。
+              <br/>
+              2020年の8月からLife is Tech!という会社で中高生に向けにRubyを使ったWebサービスの開発、Swiftを使ったiOSアプリの開発について教えています。また、そこで使用する教科書の作成もしています。
+            </p>
+            <div class="about_me-links">
+              <a href="#" class="link opacity-hover">
+                <img src="./images/links/github.png" alt="">
+              </a>
+              <a href="#" class="link opacity-hover">
+                <img src="./images/links/gmail.png" alt="">
+              </a>
+              <a href="#" class="link opacity-hover">
+                <img src="./images/links/qiita.png" alt="">
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="about_me-avatar">
-          <img src="./images/about-me/portrait-image.png" alt="">
+          <div class="about_me-avatar">
+            <img src="./images/about-me/portrait-image.png" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="wrapper">
-      <h2>Skills</h2>
-      <div class="card-container">
-        <div class="card ruby">
-          <img src="./images/skills/ruby-white.png" alt="" width="71px">
-          <p>Ruby</p>
-        </div>
-        <div class="card swift">
-          <img src="./images/skills/swift-white.png" alt="" width="71px">
-          <p>Swift</p>
-        </div>
-        <div class="card firebase">
-          <img src="./images/skills/firebase-white.png" alt="" width="71px">
-          <p>Firebase</p>
-        </div>
-        <div class="card js">
-          <img src="./images/skills/javascript-white.png" alt="" width="71px">
-          <p>javascript</p>
-        </div>
-        <div class="card vue">
-          <img src="./images/skills/vue-white.png" alt="" width="71px">
-          <p>Vue</p>
-        </div>
-        <div class="card python">
-          <img src="./images/skills/python-white.png" alt="" width="71px">
-          <p>Python</p>
-        </div>
-        <div class="card ts">
-          <img src="./images/skills/typescript-white.png" alt="" width="71px">
-          <p>TypeScript</p>
-        </div>
-        <div class="card react">
-          <img src="./images/skills/react-white.png" alt="" width="71px">
-          <p>React</p>
+    </section>
+    <section class="section">
+      <div class="wrapper">
+        <h2>Skills</h2>
+        <div class="card-container">
+          <div class="card ruby scale-onhover">
+            <div></div>
+            <p class="skills-p">Ruby</p>
+          </div>
+          <div class="card swift scale-onhover">
+            <div></div>
+            <p class="skills-p">Swift</p>
+          </div>
+          <div class="card firebase scale-onhover">
+            <div></div>
+            <p class="skills-p">Firebase</p>
+          </div>
+          <div class="card js scale-onhover">
+            <div></div>
+            <p class="skills-p">javascript</p>
+          </div>
+          <div class="card vue scale-onhover">
+            <div></div>
+            <p class="skills-p">Vue</p>
+          </div>
+          <div class="card python scale-onhover">
+            <div></div>
+            <p class="skills-p">Python</p>
+          </div>
+          <div class="card ts scale-onhover">
+            <div></div>
+            <p class="skills-p">TypeScript</p>
+          </div>
+          <div class="card react scale-onhover">
+            <div></div>
+            <p class="skills-p">React</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="wrapper">
-      <h2>Works</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="work awad swiper-slide">
-            <img src="./images/works/awad.png" alt="" width="150px">
-            <h3>Awad</h3>
-            <p>関西メンター主催の淡路島全体を使った宝さがしイベントAWA-DのiOSアプリです。</p>
-            <div class="used-tech">
-              <img src="./images/works/swift.png" alt="" width="40px">
-              <img src="./images/works/firebase.png" alt="" width="40px">
+    </section>
+    <section class="section">
+      <div class="wrapper">
+        <h2>Works</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="work awad swiper-slide">
+              <img src="./images/works/awad.png" alt="" width="150px">
+              <h3>Awad</h3>
+              <p>関西メンター主催の淡路島全体を使った宝さがしイベントAWA-DのiOSアプリです。</p>
+              <div class="used-tech">
+                <img src="./images/works/swift.png" alt="" width="40px">
+                <img src="./images/works/firebase.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-          <div class="work gradient-border sportsfesta swiper-slide">
-            <img src="./images/works/sports-festa.png" alt="" width="150px">
-            <h3>Sports Festa2020</h3>
-            <p>関西メンター主催の運動会「SportsFesta2020」のLPの作成を担当しました。</p>
-            <div class="used-tech">
-              <img src="./images/works/typescript.png" alt="" width="40px">
-              <img src="./images/works/react.png" alt="" width="40px">
-              <img src="./images/works/gatsby.png" alt="" width="40px">
+            <div class="work gradient-border sportsfesta swiper-slide">
+              <img src="./images/works/sports-festa.png" alt="" width="150px">
+              <h3>Sports Festa2020</h3>
+              <p>関西メンター主催の運動会「SportsFesta2020」のLPの作成を担当しました。</p>
+              <div class="used-tech">
+                <img src="./images/works/typescript.png" alt="" width="40px">
+                <img src="./images/works/react.png" alt="" width="40px">
+                <img src="./images/works/gatsby.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-
-          <div class="work gradient-border business-card swiper-slide">
-            <img src="./images/works/business-card.png" alt="" width="150px">
-            <h3>名刺サイト</h3>
-            <p>Web上で見れる名刺を作りました。</p>
-            <div class="used-tech">
-              <img src="./images/works/javascript.png" alt="" width="40px">
+  
+            <div class="work gradient-border business-card swiper-slide">
+              <img src="./images/works/business-card.png" alt="" width="150px">
+              <h3>名刺サイト</h3>
+              <p>Web上で見れる名刺を作りました。</p>
+              <div class="used-tech">
+                <img src="./images/works/javascript.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-
-          <div class="work aika swiper-slide">
-            <img src="./images/works/aika.png" alt="" width="150px">
-            <h3>Aika</h3>
-            <p>本アプリはZoomでのオンラインミーティングをより円滑に進めるための支援サービスです。</p>
-            <div class="used-tech">
-              <img src="./images/works/ruby.png" alt="" width="40px">
-              <img src="./images/works/swift.png" alt="" width="40px">
+  
+            <div class="work aika swiper-slide">
+              <img src="./images/works/aika.png" alt="" width="150px">
+              <h3>Aika</h3>
+              <p>本アプリはZoomでのオンラインミーティングをより円滑に進めるための支援サービスです。</p>
+              <div class="used-tech">
+                <img src="./images/works/ruby.png" alt="" width="40px">
+                <img src="./images/works/swift.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-
-          <div class="work studyroom swiper-slide">
-            <img src="./images/works/study-room.png" alt="" width="150px">
-            <h3>Study room</h3>
-            <p>Study Roomは、時間管理付きのオンライン自習室です。</p>
-            <div class="used-tech">
-              <img src="./images/works/vue.png" alt="" width="40px">
-              <img src="./images/works/firebase.png" alt="" width="40px">
+  
+            <div class="work studyroom swiper-slide">
+              <img src="./images/works/study-room.png" alt="" width="150px">
+              <h3>Study room</h3>
+              <p>Study Roomは、時間管理付きのオンライン自習室です。</p>
+              <div class="used-tech">
+                <img src="./images/works/vue.png" alt="" width="40px">
+                <img src="./images/works/firebase.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-
-          <div class="work ramen-collection swiper-slide">
-            <img src="./images/works/ramen-collection.jpg" alt="" width="150px">
-            <h3>ラーメンあつめ</h3>
-            <p>駅周辺のラーメンを全部食べるためのアプリです。</p>
-            <div class="used-tech">
-              <img src="./images/works/swift.png" alt="" width="40px">
+  
+            <div class="work ramen-collection swiper-slide">
+              <img src="./images/works/ramen-collection.jpg" alt="" width="150px">
+              <h3>ラーメンあつめ</h3>
+              <p>駅周辺のラーメンを全部食べるためのアプリです。</p>
+              <div class="used-tech">
+                <img src="./images/works/swift.png" alt="" width="40px">
+              </div>
             </div>
+  
           </div>
-
+  
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-
-        <!-- <div class="swiper-pagination"></div> -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="wrapper">
-      <h2>Writing</h2>
-      <div id="posts-container">
+    </section>
+    <section class="section writing">
+      <div class="wrapper">
+        <h2>Writing</h2>
+        <div id="posts-container">
+        </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    <p>&copy; Tomoya Tanaka | All Rights Reserved.</p>
-  </footer>
+      <footer>
+        <p>&copy; Tomoya Tanaka | All Rights Reserved.</p>
+      </footer>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js" integrity="sha512-rXZZDfRSa6rsBuT78nRTbh1ccwpXhTCspKUDqox3hUQNYdjB6KB6mSj6mXcB9/5F5wODAJnkztXPxzkTalp11w==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js" integrity="sha512-FzESM/E7XJBqcJyrXa08gRcpp5rDHO661C0L3vH4NsZfUWUsjN4+t6Lg8h+e8TMR2aYijIrcT+CPGq7tSugRzA==" crossorigin="anonymous"></script>
+  
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 4,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 0,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -200,6 +209,24 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1000: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+    });
+
+    $('#fullpage').fullpage({
+      anchors: ['top', 'about-me', 'skills', 'works', 'writing'],
+      menu: '#global-menu',
     });
   </script>
   <script src="./js/main.js"></script>

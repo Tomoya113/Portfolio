@@ -4,6 +4,7 @@
   font-weight: bold;
   border-left: solid 15px var(--light-pink);
   padding-left: 10px;
+  margin-bottom: 30px;
 }
 
 .about_me-name span {
@@ -24,7 +25,7 @@
   width: 45%;
 }
 
-.about_me-information p {
+.about_me-information .detail {
   font-size: 24px;
   font-family: var(--japanese);
   font-weight: 100;
@@ -57,4 +58,66 @@
 .link img {
   display: block;
   width: 76px;
+}
+
+@media (max-width: 1170px) {
+  .about_me-information .detail {
+    font-size: 18px;
+  }
+
+  .link img {
+    display: block;
+    width: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_me-content {
+    padding-top: 0px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about_me-avatar {
+    width: 60%;
+  }
+  .about_me-information {
+    margin-top: 10px;
+    width: 60%;
+  }
+
+  .about_me-information .detail {
+    font-size: 16px;
+  }
+
+  .about_me-name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  .about_me-name span {
+    display: block;
+    font-size: 16px;
+  }
+
+  .about_me-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width: 500px) { 
+  .about_me-links {
+    display: none;
+  }
+  .about_me-information {
+    margin-top: 10px;
+    width: 100%;
+  }
 }

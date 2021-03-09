@@ -2,6 +2,10 @@
   margin-top: 50px;
 }
 
+.writing .wrapper {
+  padding: 50px 0 0;
+}
+
 .post {
   display: flex;
   align-items: center;
@@ -18,4 +22,16 @@
   font-weight: bold;
   color: var(--white);
   margin-left: 20px;
+  opacity: 0.7;
+  transition: opacity 0.4s;
+}
+
+.post:hover p {
+  opacity: 1;
+}
+
+@media (max-width: 768px) { 
+  .post p {
+    font-size: 16px;
+  }
 }

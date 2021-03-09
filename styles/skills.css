@@ -6,7 +6,8 @@
 }
 
 .card {
-  width: 250px;
+  max-width: 230px;
+  width: 25%;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -15,11 +16,48 @@
 }
 
 .card:nth-child(n+5) {
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+@media (max-width: 1170px) {
+  
+  .card:nth-child(n+5) {
+    margin-top: 30px;
+  }
+
+  .card {
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .card-container {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 50%;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) { 
+  .card-container {
+    width: 100%;
+  }
+}
+
+
+.card div {
+  width: 30%;
+  height: 100%;
 }
 
 .card p {
   font-size: 32px;
+  width: 60%;
   margin-left: 15px;
 }
 
@@ -32,5 +70,54 @@
 }
 
 .ts p {
-  font-size: 22px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) { 
+  .python p {
+    font-size: 25px
+  }
+  .firebase p {
+    font-size: 20px;
+  }
+  
+  .js p {
+    font-size: 18px;
+  }
+  
+  .ts p {
+    font-size: 16px;
+  }
+}
+
+.ruby div {
+  background: url("../images/skills/ruby-white.png") no-repeat center/contain;
+}
+
+.swift div {
+  background: url("../images/skills/swift-white.png") no-repeat center/contain;
+}
+
+.firebase div {
+  background: url("../images/skills/firebase-white.png") no-repeat center/contain;
+}
+
+.js div {
+  background: url("../images/skills/javascript-white.png") no-repeat center/contain;
+}
+
+.vue div {
+  background: url("../images/skills/vue-white.png") no-repeat center/contain;
+}
+
+.python div {
+  background: url("../images/skills/python-white.png") no-repeat center/contain;
+}
+
+.ts div {
+  background: url("../images/skills/typescript-white.png") no-repeat center/contain;
+}
+
+.react div {
+  background: url("../images/skills/react-white.png") no-repeat center/contain;
 }
