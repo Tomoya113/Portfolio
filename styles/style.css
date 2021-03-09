@@ -166,3 +166,9 @@ section {
 .scale-onhover:hover {
   transform: scale(1.1);
 }
+
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #54A1F9 !important;
+}

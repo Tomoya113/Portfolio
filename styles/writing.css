@@ -2,8 +2,14 @@
   margin-top: 50px;
 }
 
+.writing {
+  position: relative;
+}
+
 .writing .wrapper {
-  padding: 50px 0 0;
+  padding: 0 50px 50px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .post {
