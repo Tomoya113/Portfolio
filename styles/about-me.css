@@ -121,3 +121,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .about_me-avatar {
+    width: 100%;
+  }
+}

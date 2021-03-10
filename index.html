@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="./styles/works.css">
   <link rel="stylesheet" href="./styles/writing.css">
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/hamburger.css">
   <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Tomoya Tanaka</title>
 </head>
 <body>
@@ -29,8 +32,23 @@
       <a data-menuanchor="writing" href="#writing" class="opacity-hover">Writing</a>
     </div>
   </nav>
+  <button class="ham" id="ham">
+    <span class="menuIcon material-icons">
+      menu
+    </span>
+    <span class="xIcon material-icons">
+      close
+    </span>
+  </button>
+  <ul class="menu">
+    <li><a class="menuLink" href="#top-sp">Home</a></li>
+    <li><a class="menuLink" href="#about-me-sp">About me</a></li>
+    <li><a class="menuLink" href="#skills-sp">Skills</a></li>
+    <li><a class="menuLink" href="#works-sp">Works</a></li>
+    <li><a class="menuLink" href="#writing-sp">Writing</a></li>
+  </ul>
   <main id="fullpage">
-    <div class="header section">
+    <div class="header section" id="top-sp">
       <div class="pattern1"></div>
       <div class="pattern2"></div>
       <h1 class="title">
@@ -38,8 +56,8 @@
         MY PORTFOLIO
       </h1>
     </div>
-    <section class="section">
-      <div class="wrapper">
+    <section class="section" id="about-me-sp">
+      <div class="wrapper animate__animated animate__fadeInUp">
         <h2>About me</h2>
         <div class="about_me-content">
           <div class="about_me-information">
@@ -69,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="skills-sp">
       <div class="wrapper">
         <h2>Skills</h2>
         <div class="card-container">
@@ -108,7 +126,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="works-sp">
       <div class="wrapper">
         <h2>Works</h2>
         <div class="swiper-container">
@@ -171,13 +189,13 @@
               </div>
             </div>
           </div>  
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div> -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
-    <section class="section writing">
+    <section class="section writing" id="writing-sp">
       <div class="wrapper">
         <h2>Writing</h2>
         <div id="posts-container">
@@ -230,6 +248,12 @@
         navigationPosition: 'left',
         showActiveTooltip: true,
       });
+    }
+
+    if (screen && screen.width > 480) {
+      $('#ham').css('display', 'none')
+    } else {
+      $('#global-menu').css('display', 'none')
     }
   </script>
   <script src="./js/main.js"></script>

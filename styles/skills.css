@@ -19,37 +19,6 @@
   margin-top: 60px;
 }
 
-@media (max-width: 1170px) {
-  
-  .card:nth-child(n+5) {
-    margin-top: 30px;
-  }
-
-  .card {
-    margin-top: 30px;
-  }
-}
-
-
-@media (max-width: 1170px) {
-  .card-container {
-    width: 550px;
-    margin: 0 auto;
-  }
-
-  .card {
-    width: 50%;
-    display: flex;
-  }
-}
-
-@media (max-width: 768px) { 
-  .card-container {
-    width: 100%;
-  }
-}
-
-
 .card div {
   width: 30%;
   height: 100%;
@@ -73,7 +42,44 @@
   font-size: 20px;
 }
 
+
+@media (max-width: 1170px) {
+  .card:nth-child(n+5) {
+    margin-top: 30px;
+  }
+
+  .card {
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .card-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 22%;
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) { 
+  .card-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    width: 50%;
+    display: flex;
+  }
+
+  /* .card:nth-child(2n) {
+    margin-left: 20px;
+  } */
   .python p {
     font-size: 25px
   }
@@ -87,6 +93,29 @@
   
   .ts p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) { 
+  .card {
+    flex-direction: column;
+  }
+
+  /* .card:nth-child(2n) {
+    margin-left: 20px;
+  } */
+
+  .card div {
+    width: 100%;
+    height: 50px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0px;
+    text-align: center;
   }
 }
 
