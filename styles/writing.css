@@ -1,5 +1,5 @@
 #posts-container {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .writing {
@@ -35,8 +35,24 @@
   opacity: 1;
 }
 
+.post img {
+  display: none;
+}
+
 @media (max-width: 768px) { 
   .post p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post p {
+    opacity: 1;
+    margin-left: 0px;
+  }
+
+  .writing .wrapper {
+    padding: 0 20px 50px;
+    margin: 0 auto;
   }
 }

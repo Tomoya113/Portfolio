@@ -44,6 +44,7 @@
   line-height: 1.5;
   text-align: center;
   margin-top: 10px;
+  overflow: scroll;
 }
 
 .work img {
@@ -84,4 +85,33 @@
   top: 0;
   left: 0;
   border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 1170px) {
+
+}
+
+@media (max-width: 768px) { 
+  .work h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work {
+    margin-top: 30px;
+  }
+
+  .work:nth-child(2) {
+    margin: 30px 0px 0px;
+  }
+  
+  .work:nth-child(3) {
+    margin: 30px 0px 0px;
+  }
 }

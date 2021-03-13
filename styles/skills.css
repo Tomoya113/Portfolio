@@ -76,16 +76,21 @@
   .card-container {
     width: 100%;
     justify-content: center;
+    /* justify-content: space-between; */
   }
 
   .card {
-    width: 50%;
+    width: 47%;
     display: flex;
   }
 
-  /* .card:nth-child(2n) {
-    margin-left: 20px;
-  } */
+  .card:nth-child(even) {
+    margin-left: 10px
+  }
+  .card:nth-child(odd) {
+    margin-right: 10px
+  }
+
   .python p {
     font-size: 25px
   }
@@ -208,7 +213,6 @@
 .ts:hover p {
   color: var(--typescript);
 }
-
 
 .react div {
   background: url("../images/skills/react-white.png") no-repeat center/contain;
