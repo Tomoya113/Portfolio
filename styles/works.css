@@ -2,11 +2,17 @@
   display: flex;
 }
 
+.works {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .work {
   background-color: var(--white);
   position: relative;
   padding: 20px;
-  /* width: 250px !important; */
+  width: 250px !important;
   height: 450px !important;
   border-radius: 10px;
   display: flex;
@@ -16,6 +22,7 @@
 }
 
 .work:nth-child(2) {
+  margin: 0px 30px 0;
   padding: 30px 20px 20px;
 }
 
