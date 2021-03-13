@@ -113,34 +113,42 @@ section {
 
 .ruby {
   background-color: var(--ruby);
+  border: solid 1px var(--ruby);
 }
 
 .swift {
   background-color: var(--swift);
+  border: solid 1px var(--swift);
 }
 
 .js {
   background-color: var(--javascript);
+  border: solid 1px var(--javascript);
 }
 
 .ts {
   background-color: var(--typescript);
+  border: solid 1px var(--typescript);
 }
 
 .python {
   background-color: var(--python);
+  border: solid 1px var(--python);
 }
 
 .vue {
   background-color: var(--vue);
+  border: solid 1px var(--vue);
 }
 
 .firebase {
   background-color: var(--firebase);
+  border: solid 1px var(--firebase);
 }
 
 .react {
   background-color: var(--react);
+  border: solid 1px var(--react);
 }
 
 .awad {

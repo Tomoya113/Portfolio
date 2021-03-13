@@ -13,6 +13,11 @@
   align-items: center;
   padding: 35px 30px 35px 30px;
   border-radius: 10px;
+  transition: background 0.5s, border 0.5s;
+}
+
+.card:hover {
+  background-color: var(--background);
 }
 
 .card:nth-child(n+5) {
@@ -22,6 +27,7 @@
 .card div {
   width: 30%;
   height: 100%;
+  transition: background 0.5s;
 }
 
 .card p {
@@ -123,30 +129,95 @@
   background: url("../images/skills/ruby-white.png") no-repeat center/contain;
 }
 
+.ruby:hover div {
+  background: url("../images/works/ruby.png") no-repeat center/contain;
+}
+
+.ruby:hover p {
+  color: var(--ruby);
+}
+
 .swift div {
   background: url("../images/skills/swift-white.png") no-repeat center/contain;
+}
+
+.swift:hover div {
+  background: url("../images/works/swift.png") no-repeat center/contain;
+}
+
+.swift:hover p {
+  color: var(--swift);
 }
 
 .firebase div {
   background: url("../images/skills/firebase-white.png") no-repeat center/contain;
 }
 
+.firebase:hover div {
+  background: url("../images/works/firebase.png") no-repeat center/contain;
+}
+
+.firebase:hover p {
+  color: var(--firebase);
+}
+
 .js div {
   background: url("../images/skills/javascript-white.png") no-repeat center/contain;
+}
+
+.js:hover div {
+  background: url("../images/works/javascript.png") no-repeat center/contain;
+}
+
+.js:hover p {
+  color: var(--javascript);
 }
 
 .vue div {
   background: url("../images/skills/vue-white.png") no-repeat center/contain;
 }
 
+.vue:hover div {
+  background: url("../images/works/vue.png") no-repeat center/contain;
+}
+
+.vue:hover p {
+  color: var(--vue);
+}
+
 .python div {
   background: url("../images/skills/python-white.png") no-repeat center/contain;
+}
+
+.python:hover div {
+  background: url("../images/works/python.png") no-repeat center/contain;
+}
+
+.python:hover p {
+  color: var(--python);
 }
 
 .ts div {
   background: url("../images/skills/typescript-white.png") no-repeat center/contain;
 }
 
+.ts:hover div {
+  background: url("../images/works/typescript.png") no-repeat center/contain;
+}
+
+.ts:hover p {
+  color: var(--typescript);
+}
+
+
 .react div {
   background: url("../images/skills/react-white.png") no-repeat center/contain;
+}
+
+.react:hover div {
+  background: url("../images/works/react.png") no-repeat center/contain;
+}
+
+.react:hover p {
+  color: var(--react);
 }

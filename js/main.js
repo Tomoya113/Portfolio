@@ -67,4 +67,26 @@ window.onload = () => {
     globalMenu.style.transform = `translate(${gapX * 0.3}px, ${gapY * 0.3}px)`
   })
 
+  // var _card = document.getElementsByClassName("card");
+  // var cards = Array.from(_card);
+  // cards.map(card => {
+  //   card.addEventListener("mousemove", e => {
+  //     console.log("mousemove");
+  //     const { x, y, width, height } = card.getBoundingClientRect();
+  //     const centerPoint = {x: x + width / 2, y: y + height / 2}
+  //     const degreeX = (e.clientY - centerPoint.y) * 0.03
+  //     const degreeY = (e.clientX - centerPoint.x) * -0.03
+  //     card.style.transform = `perspective(100px) rotateX(${degreeX}deg) rotateY(${degreeY}deg)`
+  //   })
+  // })
 }
+
+// window.addEventListener("mousemove", e => {
+  // const card = document.getElementById('card');
+  // const { x, y, width, height } = card.getBoundingClientRect();
+  // const centerPoint = {x: x + width / 2, y: y + height / 2}
+  // const degreeX = (e.clientY - centerPoint.y) * 0.008
+  // const degreeY = (e.clientX - centerPoint.x) * -0.008
+
+  // card.style.transform = `perspective(1000px) rotateX(${degreeX}deg) rotateY(${degreeY}deg)`
+// })
