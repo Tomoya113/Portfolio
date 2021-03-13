@@ -49,4 +49,22 @@ window.onload = () => {
       menuLink.addEventListener("click", toggleMenu);
     }
   )
+
+  var header = document.getElementById("top-sp");
+  var _materials = document.getElementsByClassName("bg-material");
+  var materials = Array.from(_materials) ;
+  var title = document.getElementById("title");
+  var globalMenu = document.getElementById("global-menu")
+  header.addEventListener("mousemove", e => {
+    const { x, y, width, height } = header.getBoundingClientRect();
+    const centerPoint = {x: x + width / 2, y: y + height / 2}
+    const gapX = -(e.clientX - centerPoint.x) * 0.1
+    const gapY = -(e.clientY - centerPoint.y) * 0.1
+    materials.map(material => {
+      material.style.transform = `translate(${gapX * 0.5}px, ${gapY * 0.5}px)`
+    })
+    title.style.transform = `translate(${gapX * 0.8}px, ${gapY * 0.8}px)`
+    globalMenu.style.transform = `translate(${gapX * 0.3}px, ${gapY * 0.3}px)`
+  })
+
 }
