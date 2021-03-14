@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/hamburger.css">
   <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="shortcut icon" href="favicon.ico">
   <!-- OGP -->
@@ -36,10 +35,10 @@
       <a data-menuanchor="top" href="#top" class="opacity-hover">tt</a>
     </div>
     <div class="nav-right">
-      <a data-menuanchor="about-me" href="#about-me" class="opacity-hover">About me</a>
-      <a data-menuanchor="skills" href="#skills" class="opacity-hover">Skills</a>
-      <a data-menuanchor="works" href="#works" class="opacity-hover">Works</a>
-      <a data-menuanchor="writing" href="#writing" class="opacity-hover">Writing</a>
+      <a href="#about-me" class="opacity-hover">About me</a>
+      <a href="#skills" class="opacity-hover">Skills</a>
+      <a href="#works" class="opacity-hover">Works</a>
+      <a href="#writing" class="opacity-hover">Writing</a>
     </div>
   </nav>
   <button class="ham" id="ham">
@@ -51,14 +50,14 @@
     </span>
   </button>
   <ul class="menu" id="menu">
-    <li><a class="menuLink" href="#top-sp">Home</a></li>
-    <li><a class="menuLink" href="#about-me-sp">About me</a></li>
-    <li><a class="menuLink" href="#skills-sp">Skills</a></li>
-    <li><a class="menuLink" href="#works-sp">Works</a></li>
-    <li><a class="menuLink" href="#writing-sp">Writing</a></li>
+    <li><a class="menuLink" href="#top">Home</a></li>
+    <li><a class="menuLink" href="#about-me">About me</a></li>
+    <li><a class="menuLink" href="#skills">Skills</a></li>
+    <li><a class="menuLink" href="#works">Works</a></li>
+    <li><a class="menuLink" href="#writing">Writing</a></li>
   </ul>
-  <main id="fullpage">
-    <div class="header section" id="top-sp">
+  <main>
+    <div class="header section" id="top">
       <div class="pattern1 header-animate bg-material" id="material-1"></div>
       <div class="pattern2 header-animate bg-material" id="material-2"></div>
       <h1 class="title header-animate" id="title">
@@ -66,7 +65,7 @@
         MY PORTFOLIO
       </h1>
     </div>
-    <section class="section" id="about-me-sp">
+    <section class="section" id="about-me">
       <div class="wrapper animate__animated animate__fadeInUp">
         <h2>About me</h2>
         <div class="about_me-content">
@@ -97,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="section" id="skills-sp">
+    <section class="section" id="skills">
       <div class="wrapper">
         <h2>Skills</h2>
         <div class="card-container">
@@ -136,101 +135,84 @@
         </div>
       </div>
     </section>
-    <section class="section" id="works-sp">
+    <section class="section" id="works">
       <div class="wrapper">
         <h2>Works</h2>
         <div class="works">
-          <div class="work awad">
-            <img src="./images/works/awad.png" alt="" width="150px">
-            <h3>Awad</h3>
-            <p>関西メンター主催の淡路島全体を使った宝さがしイベントAWA-DのiOSアプリです。</p>
-            <div class="used-tech">
-              <img src="./images/works/swift.png" alt="" width="40px">
-              <img src="./images/works/firebase.png" alt="" width="40px">
+          <!-- <div class="works-row"> -->
+            <div class="work awad">
+              <img src="./images/works/awad.png" alt="" width="150px">
+              <h3>Awad</h3>
+              <p>関西メンター主催の淡路島全体を使った宝さがしイベントAWA-DのiOSアプリです。</p>
+              <div class="used-tech">
+                <img src="./images/works/swift.png" alt="" width="40px">
+                <img src="./images/works/firebase.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-          <div class="work gradient-border sportsfesta">
-            <img src="./images/works/sports-festa.png" alt="" width="150px">
-            <h3>Sports Festa2020</h3>
-            <p>関西メンター主催の運動会「SportsFesta2020」のLPの作成を担当しました。</p>
-            <div class="used-tech">
-              <img src="./images/works/typescript.png" alt="" width="40px">
-              <img src="./images/works/react.png" alt="" width="40px">
-              <img src="./images/works/gatsby.png" alt="" width="40px">
+            <div class="work gradient-border sportsfesta">
+              <img src="./images/works/sports-festa.png" alt="" width="150px">
+              <h3>Sports Festa2020</h3>
+              <p>関西メンター主催の運動会「SportsFesta2020」のLPの作成を担当しました。</p>
+              <div class="used-tech">
+                <img src="./images/works/typescript.png" alt="" width="40px">
+                <img src="./images/works/react.png" alt="" width="40px">
+                <img src="./images/works/gatsby.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
-          <div class="work gradient-border business-card">
-            <img src="./images/works/business-card.png" alt="" width="150px">
-            <h3>名刺サイト</h3>
-            <p>Web上で見れる名刺を作りました。</p>
-            <div class="used-tech">
-              <img src="./images/works/javascript.png" alt="" width="40px">
+            <div class="work gradient-border business-card">
+              <img src="./images/works/business-card.png" alt="" width="150px">
+              <h3>名刺サイト</h3>
+              <p>Web上で見れる名刺を作りました。</p>
+              <div class="used-tech">
+                <img src="./images/works/javascript.png" alt="" width="40px">
+              </div>
             </div>
-          </div>
+          <!-- </div> -->
+          <!-- <div class="works-row"> -->
+            <div class="work aika">
+              <img src="./images/works/aika.png" alt="" width="150px">
+              <h3>Aika</h3>
+              <p>本アプリはZoomでのオンラインミーティングをより円滑に進めるための支援サービスです。</p>
+              <div class="used-tech">
+                <img src="./images/works/ruby.png" alt="" width="40px">
+                <img src="./images/works/swift.png" alt="" width="40px">
+              </div>
+            </div>
+            <div class="work studyroom">
+              <img src="./images/works/study-room.png" alt="" width="150px">
+              <h3>Study room</h3>
+              <p>Study Roomは、時間管理付きのオンライン自習室です。</p>
+              <div class="used-tech">
+                <img src="./images/works/vue.png" alt="" width="40px">
+                <img src="./images/works/firebase.png" alt="" width="40px">
+              </div>
+            </div>
+            <div class="work ramen-collection">
+              <img src="./images/works/ramen-collection.jpg" alt="" width="150px">
+              <h3>ラーメンあつめ</h3>
+              <p>駅周辺のラーメンを全部食べるためのアプリです。</p>
+              <div class="used-tech">
+                <img src="./images/works/swift.png" alt="" width="40px">
+              </div>
+            </div>
+          <!-- </div> -->
         </div>
       </div>
     </section>
-    <section class="section" id="works-sp">
-      <div class="wrapper">
-        <div class="works">
-          <div class="work aika">
-            <img src="./images/works/aika.png" alt="" width="150px">
-            <h3>Aika</h3>
-            <p>本アプリはZoomでのオンラインミーティングをより円滑に進めるための支援サービスです。</p>
-            <div class="used-tech">
-              <img src="./images/works/ruby.png" alt="" width="40px">
-              <img src="./images/works/swift.png" alt="" width="40px">
-            </div>
-          </div>
-          <div class="work studyroom">
-            <img src="./images/works/study-room.png" alt="" width="150px">
-            <h3>Study room</h3>
-            <p>Study Roomは、時間管理付きのオンライン自習室です。</p>
-            <div class="used-tech">
-              <img src="./images/works/vue.png" alt="" width="40px">
-              <img src="./images/works/firebase.png" alt="" width="40px">
-            </div>
-          </div>
-          <div class="work ramen-collection">
-            <img src="./images/works/ramen-collection.jpg" alt="" width="150px">
-            <h3>ラーメンあつめ</h3>
-            <p>駅周辺のラーメンを全部食べるためのアプリです。</p>
-            <div class="used-tech">
-              <img src="./images/works/swift.png" alt="" width="40px">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section writing" id="writing-sp">
+    <section class="section writing" id="writing">
       <div class="wrapper">
         <h2>Writing</h2>
         <div id="posts-container">
         </div>
       </div>
-      <footer>
-        <p>&copy; Tomoya Tanaka | All Rights Reserved.</p>
-      </footer>
     </section>
+    <footer>
+      <p>&copy; Tomoya Tanaka | All Rights Reserved.</p>
+    </footer>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js" integrity="sha512-rXZZDfRSa6rsBuT78nRTbh1ccwpXhTCspKUDqox3hUQNYdjB6KB6mSj6mXcB9/5F5wODAJnkztXPxzkTalp11w==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js" integrity="sha512-FzESM/E7XJBqcJyrXa08gRcpp5rDHO661C0L3vH4NsZfUWUsjN4+t6Lg8h+e8TMR2aYijIrcT+CPGq7tSugRzA==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous"></script>
-  
   <script>
-    if (screen && screen.width > 768) {
-      $('#fullpage').fullpage({
-        anchors: ['top', 'about-me', 'skills', 'works', 'writing'],
-        menu: '#global-menu',
-        navigation: true,
-        navigationPosition: 'left',
-        showActiveTooltip: true,
-      });
-    }
-
     if (screen && screen.width > 480) {
       $('#ham').css('display', 'none')
     } else {

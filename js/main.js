@@ -50,7 +50,7 @@ window.onload = () => {
     }
   )
 
-  var header = document.getElementById("top-sp");
+  var header = document.getElementById("top");
   var _materials = document.getElementsByClassName("bg-material");
   var materials = Array.from(_materials) ;
   var title = document.getElementById("title");

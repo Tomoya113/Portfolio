@@ -35,14 +35,16 @@
   opacity: 1;
 }
 
-.post img {
-  display: none;
-}
 
 @media (max-width: 768px) { 
   .post p {
     font-size: 16px;
+    margin: 0;
   }
+  .post img {
+    display: none;
+  }
+
 }
 
 @media (max-width: 480px) {
